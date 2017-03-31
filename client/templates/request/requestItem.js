@@ -13,7 +13,7 @@ Template.requestItem.helpers({
     }
   },
   mapName: function() {
-    return this.id
+    return this._id
   },
   isEasy() {
     return this.confusionLevel == 'low';
@@ -27,7 +27,7 @@ Template.requestItem.helpers({
 });
 
 Template.requestItem.onCreated(function() {
-  GoogleMaps.ready(this.data.id, function(map) {
+  GoogleMaps.ready(this.data._id, function(map) {
     // Add a marker to the map once it's ready
     var marker = new google.maps.Marker({
       position: map.options.center,
