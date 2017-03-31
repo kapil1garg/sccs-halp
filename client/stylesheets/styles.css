@@ -1,6 +1,7 @@
 .grid-block,
 .main,
 .request,
+.new-request,
 .comments li,
 .comment-form {
     background: #FF9B27;
@@ -11,11 +12,34 @@
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
+
 body {
     background: #007DB2;
     color: #007DB2;
     font-family: 'Open Sans', sans-serif;
 }
+
+a {
+    text-decoration: none !important;
+}
+
+#help-request {
+    position: relative;
+    text-align: center;
+    color: #FF9B27;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#help-request a {
+    color: #FF9B27;
+}
+
+#help-request a:hover {
+    color: #FF9B27;
+}
+
 #main {
     position: relative;
 }

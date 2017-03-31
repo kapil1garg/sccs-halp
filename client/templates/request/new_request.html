@@ -1,0 +1,45 @@
+<template name="newRequest">
+    <form class="main form page">
+    <div class="form-group">
+      <label class="control-label" for="title">What do you need help with?</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="" placeholder="Give your request a short, descriptive title" class="form-control" required/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="name">Your name</label>
+      <div class="controls">
+          <input name="name" id="name" type="text" value="" placeholder="Enter your name" class="form-control" required/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="description">Description of help needed</label>
+      <div class="controls">
+          <input name="description" id="description" type="text" value="" placeholder="Describe in some detail what exactly you need help with" class="form-control" required/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="location">Where do you need help?</label>
+      <div class="controls">
+          <input name="location-lat" id="location-lat" type="number" min="-90" max=90 step="any" value="" placeholder="Latitude of location" class="form-control" required/>
+          <br>
+          <input name="location-long" id="location-long" type="number" min="-90" max=90 step="any" value="" placeholder="Longitude of location" class="form-control" required/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="control-label" for="title">How confused are you?</label>
+      <div class="controls">
+        <select name="confusionLevel" id="confusionLevel" class="form-control">
+            <option value="low">low (I've looked at it for 30-60 minutes and can't figure it out)</option>
+            <option value="medium">medium (I've been looking at it for more than 3-4 hours)</option>
+            <option value="high">high (I'm certain this is actually impossible)</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary"/>
+  </form>
+</template>

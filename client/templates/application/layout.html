@@ -1,0 +1,16 @@
+<template name="layout">
+  <div class="container">
+    <a href="{{pathFor 'requestList'}}">
+      <header class="navbar navbar-default" role="navigation">
+          <h1>Halp</h1>
+          <h3>Stack Exchange, IRL.</h3>
+      </header>
+    </a>
+    <div id="help-request">
+      <a href="{{pathFor 'newRequest'}}"><h3>Make a Help Request</h3></a>
+    </div>
+    <div id="main">
+      {{> yield}}
+    </div>
+  </div>
+</template>
