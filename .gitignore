@@ -228,3 +228,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/osx,vim,node,linux,emacs,windows,meteorjs,sublimetext
+
+# User added
+settings.json
