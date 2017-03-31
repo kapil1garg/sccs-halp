@@ -1,0 +1,20 @@
+<template name="commentItem">
+   <li>
+    <div class="col-md-10">
+      <h4>
+         <span class="author">{{user}}</span>
+      </h4>
+      <p>{{content}}</p>
+    </div>
+    <div class="col-md-2">
+      <div class="upvote">
+            <img src="/upvote.png">
+            {{this.upvote}}
+         </div>
+         <div class="downvote">
+            <img src="/downvote.png">
+            {{this.downvote}}
+         </div>
+    </div>
+   </li>
+</template>

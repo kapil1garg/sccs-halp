@@ -1,0 +1,40 @@
+<template name="requestItem">
+  <div class="request">
+    <div class="col-md-8">
+        <div class="title">
+          {{title}}
+        </div>
+        <div class="requester">
+            Requested by: {{requesterName}}
+        </div>
+        <div class="description">
+            {{description}}
+        </div>
+        <div class="confusion-level">
+            <h4>Confusion Level: {{confusionLevel}}</h4>
+            {{#if isEasy}}
+                <img src="/low.gif">
+            {{/if}}
+            {{#if isMedium}}
+                <img src="/medium.png">
+            {{/if}}
+            {{#if isHard}}
+                <img src="/high.gif">
+            {{/if}}
+        </div>
+        <div class="comment-section">
+            <b><h4>Discussion</h4></b>
+            <ul class="comments">
+                {{#each comments}}
+                    {{> commentItem}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="map-container">
+            {{> googleMap name=mapName options=mapOptions}}
+        </div>
+    </div>
+  </div>
+</template>
